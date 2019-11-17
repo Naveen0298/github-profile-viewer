@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     this.location = this.data.location;
   }
   addUserdetails(userName) {
-    return this.http.get('https://api.github.com/users/' + userName + '?access_token=beba3c150021bfb49769385927dfa59fac2cdf04');
+    return this.http.get('https://api.github.com/users/' + userName );
   }
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action, {
